@@ -44,12 +44,13 @@ a {
 a:hover {
 }
 
-#wrapper {
+main {
     background: #FFFFFF url(../img/img05.jpg) repeat;
+    overflow: hidden;
 }
 
-.container {
-    width: 1000px;
+header {
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -59,24 +60,21 @@ a:hover {
     overflow: hidden;
 }
 
-#header {
-    width: 1000px;
-    height: 150px;
+header {
+    width: 100%;
+    height: 10%;
     margin: 0 auto;
     padding: 0px 0px;
+    overflow: hidden;
 }
 
 /* Logo */
 
 #logo {
-    float: left;
-    width: 300px;
+    width: 40%;
     margin: 0;
-    padding: 0;
+    padding-left: 2%;
     color: #FFFFFF;
-}
-
-#logo h1, #logo p {
 }
 
 #logo h1 {
@@ -110,169 +108,95 @@ a:hover {
     color: #000000;
 }
 
-/* Splash */
-
-#splash {
-    width: 960px;
-    height: 300px;
-    margin: 0px auto;
-}
-
-/* Search */
-
-#search {
-    float: right;
-    width: 280px;
-    height: 60px;
-    padding: 20px 0px 0px 0px;
-}
-
-#search form {
-    height: 41px;
-    margin: 0;
-    padding: 10px 0 0 20px;
-}
-
-#search fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-#search-text {
-    width: 170px;
-    padding: 6px 5px 2px 5px;
-    border: 1px solid #E7EBED;
-    background: #FFFFFF;
-    text-transform: lowercase;
-    font: normal 11px Arial, Helvetica, sans-serif;
-    color: #5D781D;
-}
-
-#search-submit {
-    width: 50px;
-    height: 22px;
-    border: none;
-    background: #B9B9B9;
-    color: #000000;
-}
-
 /* Menu */
 
-#menu {
-    float: right;
-    width: 500px;
-    height: 90px;
-    margin: 0 auto;
-    padding: 0;
+nav {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
-#menu ul {
-    float: right;
-    margin: 0;
-    padding: 20px 0px 0px 0px;
+nav ul {
+    margin: auto;
     list-style: none;
     line-height: normal;
 }
 
-#menu li {
-    float: left;
+nav li {
+    display: inline-block;
+    padding: 2%;
 }
 
-#menu a {
-    display: block;
-    line-height: 100px;
-    margin-right: 1px;
-    padding: 0px 20px 0px 20px;
+nav a {
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: 300;
     color: #1F1F1F;
     border: none;
 }
 
-#menu a:hover, #menu .current_page_item a {
+nav a:hover, #menu .current_page_item a {
     background: url(../img/img01.jpg) repeat;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-#menu .current_page_item a {
-}
-
-/* Page */
-
-#page {
-    width: 1000px;
-    margin: 0 auto;
-    padding: 30px 0px;
-}
-
 /* Content */
 
 #content {
-    float: right;
-    width: 660px;
-    padding: 0px 0px 0px 0px;
+    width: 100%;
+    margin: auto;
 }
 
-.post {
-    overflow: hidden;
-    margin-bottom: 40px;
+article {
+    width: 100%;
+    margin-bottom: 4%;
     border-bottom: 1px solid #E7EBED;
+    padding: 2%;
 }
 
-.post .title {
-    padding: 7px 0px 0px 0px;
+article .title {
     letter-spacing: -1px;
 }
 
-.post .title a {
+article .title a {
     border: none;
     text-decoration: none;
     color: #222222;
 }
 
-.post .meta {
-    margin-bottom: 30px;
-    padding: 10px 0px 0px 0px;
+article .meta {
+    margin-bottom: 3%;
+    padding-top: 1%;
     text-align: left;
     font-family: 'Abel', sans-serif;
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: 300;
 }
 
-.post .meta .date {
-    float: left;
-}
-
-.post .meta .posted {
-    float: right;
-}
-
-.post .meta a {
-}
-
-.post .entry {
-    padding: 0px 0px 40px 0px;
+article .entry {
     text-align: justify;
+    width: 100%;
+}
+
+.posted {
+    display: block;
 }
 
 .links {
-    padding-top: 20px;
-    margin-bottom: 30px;
+    padding-top: 2%;
+    margin-bottom: 3%;
 }
 
 .more {
-    display: block;
-    float: left;
-    width: 88px;
-    padding: 5px 5px;
-    margin-right: 10px;
+    display: inline;
+    width: 20%;
+    padding: 2%;
+    margin-right: 1%;
     background: #222222;
     color: #FFFFFF;
     text-align: center;
@@ -280,10 +204,9 @@ a:hover {
 }
 
 .comments {
-    display: block;
-    float: left;
-    width: 88px;
-    padding: 5px 5px;
+    display: inline;
+    width: 20%;
+    padding: 2%;
     background: #222222;
     color: #FFFFFF;
     text-align: center;
@@ -292,224 +215,105 @@ a:hover {
 
 /* Sidebar */
 
-#sidebar {
-    float: left;
-    width: 270px;
+aside {
+    width: 100%;
     margin: 0px;
-    padding: 30px 0px 0px 0px;
+    padding: 3%;
 }
 
-#sidebar ul {
+aside ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-#sidebar li {
+aside li {
     margin: 0;
     padding: 0;
 }
 
-#sidebar li ul {
+aside li ul {
     margin: 0px 0px;
-    padding-bottom: 30px;
+    padding-bottom: 3%;
 }
 
-#sidebar li li {
+aside li li {
     line-height: 40px;
     border-bottom: 1px solid #E7EBED;
     margin: 0px 0px;
     border-left: none;
 }
 
-#sidebar li li span {
+aside li li span {
     display: block;
-    margin-top: -20px;
+    margin-top: -2%;
     padding: 0;
-    font-size: 11px;
+    font-size: 1em;
     font-style: italic;
 }
 
-#sidebar li li a {
-    padding: 0px 0px 0px 20px;
+aside li li a {
+    padding: 2%;
     background: url(../img/img04.jpg) no-repeat left 50%;
 }
 
-#sidebar h2 {
+aside h2 {
     height: 38px;
-    padding: 0px 0px 30px 0px;
+    padding: 3%;
     letter-spacing: -.5px;
     font-size: 1.8em;
     color: #222222;
 }
 
-#sidebar p {
+aside p {
     margin: 0 0px;
-    padding: 0px 30px 20px 30px;
+    padding: 3%;
     text-align: justify;
 }
 
-#sidebar a {
+aside a {
     border: none;
 }
 
-#sidebar a:hover {
+aside a:hover {
     text-decoration: underline;
-}
-
-/* Calendar */
-
-#calendar {
-}
-
-#calendar_wrap {
-    padding: 20px;
-}
-
-#calendar table {
-    width: 100%;
-}
-
-#calendar tbody td {
-    text-align: center;
-}
-
-#calendar #next {
-    text-align: right;
-}
-
-/* Three Column Footer Content */
-
-#footer-content {
-    overflow: hidden;
-    width: 1000px;
-    margin: 0px auto;
-    color: #D6E2F0;
-}
-
-#footer-content a {
-    color: #92A9B6;
-}
-
-#footer-bg {
-    overflow: hidden;
-    padding: 30px 0px;
-    background: #E8E8E8;
-}
-
-#footer-content h2 {
-    margin: 0px;
-    padding: 0px 0px 20px 0px;
-    letter-spacing: -1px;
-    font-size: 26px;
-    color: #262626;
-}
-
-
-#footer-content #fbox1 {
-    float: left;
-    width: 300px;
-    margin-right: 50px;
-}
-
-#footer-content #fbox2 {
-    float: left;
-    width: 300px;
-}
-
-#footer-content #fbox3 {
-    float: right;
-    width: 300px;
-}
-
-#footer-content a {
-}
-
-#column1 {
-    float: left;
-    width: 290px;
-    margin-right: 30px;
-}
-
-#column2 {
-    float: left;
-    width: 280px;
-}
-
-#column3 {
-    float: right;
-    width: 260px;
 }
 
 /* Footer */
 
-#footer {
-    height: 140px;
+footer {
     margin: 0 auto;
-    padding: 50px 0 15px 0;
+    padding: 2%;
     font-family: 'Abel', sans-serif;
 }
 
-#footer p {
+footer p {
     margin: 0;
-    padding-top: 10px;
+    padding-top: 1%;
     letter-spacing: 1px;
     line-height: normal;
-    font-size: 14px;
+    font-size: 1.2em;
     text-transform: uppercase;
     text-align: center;
     color: #5E5E5E;
 }
 
-#footer a {
+footer a {
     color: #5E5E5E;
-}
-
-#marketing {
-    overflow: hidden;
-    margin-bottom: 30px;
-    padding: 20px 0px 10px 0px;
-    border-top: 1px solid #E7EBED;
-    border-bottom: 1px solid #E7EBED;
-}
-
-#marketing .text1 {
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    letter-spacing: -2px;
-    text-transform: lowercase;
-    font-size: 34px;
-    color: #345E9B;
-}
-
-#marketing .text2 {
-    float: right;
-}
-
-#marketing .text2 a {
-    display: block;
-    width: 252px;
-    height: 38px;
-    padding: 15px 0px 0px 0px;
-    background: url(../img/img07.jpg) no-repeat left top;
-    letter-spacing: -2px;
-    text-align: center;
-    text-transform: lowercase;
-    font-size: 30px;
-    color: #FFFFFF;
 }
 
 #banner {
     margin: 0px auto;
-    width: 1000px;
-    height: 340px;
+    width: 100%;
     background: url(../img/img03.png) no-repeat left bottom;
 }
 
-#banner .content {
+section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    overflow: none;
 }
-
 
 .list-style1 {
     margin: 0px;
@@ -519,4 +323,16 @@ a:hover {
 
 .list-style1 a {
     color: #7F7F7F;
+}
+
+/*** MEDIA QUERIES **/
+
+@media (min-width: 700px) {
+
+    nav, nav ul, nav li, nav a {
+        margin: auto;
+        display: inline;
+        width: 100%;
+        padding: 2%;
+    }
 }
